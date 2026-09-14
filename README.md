@@ -11,6 +11,7 @@ A small STM32 devboard for deving
 ## status
 - 01: repo init + structure + empty KiCad project `devboard`
 - 02: mcu chosen!
+- 03: schematic made!
 
 ## repo structure
 - `devboard.kicad_pro` / `.kicad_sch` / `.kicad_pcb`: KiCad project (root)
@@ -18,7 +19,5 @@ A small STM32 devboard for deving
 - `README.md`: this file
 
 ## roadmap
-- 02: MCU choice + specs + constraints
-- 03: schematic (power, USB, SWD, SD, GPIO)
 - 04: layout + size optimization
 - 05: DRC + manufacturing outputs
