@@ -1,0 +1,15 @@
+# KiCad
+*-backups/
+*-cache/
+*.kicad_prl
+*.kicad_pcb-bak
+*.kicad_sch-bak
+fp-info-cache
+~*.lck
+
+# OS
+.DS_Store
+
+# Exports (regenerate)
+# output/
+# gerbers/
