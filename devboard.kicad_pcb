@@ -5731,7 +5731,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "18p"
 			(at 0 -1.16 0)
 			(layer "B.Fab")
 			(uuid "243136b2-c50c-45fd-88d7-d8270b068930")
@@ -9325,6 +9325,30 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "01491d2d-6fa5-4b0b-b4b7-41e857c3d9f2")
+	)
+	(gr_text "Half Life - Hack Club"
+		(at 155.8 111.6 0)
+		(layer "B.SilkS")
+		(uuid "93643c56-af86-46ac-944e-4108e83f08f1")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "Designed by EVV"
+		(at 156.1 110.35 0)
+		(layer "B.SilkS")
+		(uuid "1cbe485b-4aa3-477e-a220-2a271301374d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(segment
 		(start 155.9 114.025)

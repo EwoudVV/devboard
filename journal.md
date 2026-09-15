@@ -62,3 +62,8 @@ Finished the main routing: ![routing](image-2.png). Again, no lapse with this on
 finished ALL routing! there were 23 more nets to route, did all of them. some pictures: ![f.cu](image-3.png) ![in1.cu](image-4.png) ![in2.cu](image-5.png) ![b.cu](image-6.png) ![front 3d](image-7.png) ![back 3d](image-8.png)
 during this time, i also cleared up some drc errors, mostly clearance violation stuff. theres still 8 things: 4hole clearance violations, which is out of my control because thats between one of the usb-c pads and the mounting hole for it, and also 4 of this thermal relief connection zone errors which i have no idea what they are, and will see what it is and fix now.
 ok they ended up being fine to ignore
+
+## Devlog 05: Fab outputs
+
+I made a production folder with the gerbers, bom, and cpl files. The bom took me a while to put together, i had to source all the right components.
+I also found that C2 reads GND for some reason, so i fixed that.
