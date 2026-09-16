@@ -70,3 +70,10 @@ Time: 30 min
 
 I made a production folder with the gerbers, bom, and cpl files. The bom took me a while to put together, i had to source all the right components.
 I also found that C2 reads GND for some reason, so i fixed that.
+
+## Devlog 06: polishing
+
+Date: Sep 16
+Time: 20 min
+
+Added more details to the readme, including some images.
