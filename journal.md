@@ -1,4 +1,5 @@
 # Journal for my devboard
+## Total time: 8 hours, 10 minutes
 
 ## Devlog 01: init and organizing repo and structure and KiCad project
 
