@@ -65,5 +65,8 @@ ok they ended up being fine to ignore
 
 ## Devlog 05: Fab outputs
 
+Date: Sep 15
+Time: 30 min
+
 I made a production folder with the gerbers, bom, and cpl files. The bom took me a while to put together, i had to source all the right components.
 I also found that C2 reads GND for some reason, so i fixed that.
