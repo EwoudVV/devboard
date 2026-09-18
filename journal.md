@@ -78,3 +78,12 @@ Date: Sep 16
 Time: 20 min
 
 Added more details to the readme, including some images.
+
+## Devlog 07: Production fix
+
+Date: Sep 18
+Time: 30 min
+
+PCBway emailed me to confirm the order, and i noticed $25 for just the 4 tht headers. I have these headers and can easily solder them myself, so i said to remove them and also marked the headers as DNP in the prod files. There were also suggestions from them to replace 2 bulk decoupling capacitors with another one because it was out of stock, so i approved that.
+
+By the way, I already submitted my project to half life so im not counting these 30 minutes.
