@@ -96,3 +96,10 @@ made a pinout diagram for all 32 header pins and checked it against the schemati
 added starter firmware for the blinking LED, user button, and USB serial. it has commands to turn the LED on and off, resume blinking, and show the button state and press count. it compiles, and the button debounce tests pass. i still need the physical board to test USB and the actual pins.
 
 ran fresh ERC and DRC checks and fixed the incomplete ground thermals with direct connections on seven pads. there are now no active DRC errors or unrouted connections. the older excluded USB connector clearance findings and other warnings are still there. refreshed the gerbers and wrote flashing instructions.
+
+### Devlog 09: got project ready for submission
+
+Date: Oct 4
+Time: 1.34 hours
+
+got project ready for submission! i sourced exact links and did all the add to cart process stuff, made a simple video, etc. I made
