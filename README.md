@@ -6,7 +6,7 @@ A small STM32 devboard for deving
 - Compatible with a breadboard
 - USB-C programming port
 - SD card holder
-- 32 pins total, of which 16 are digital, 6 are analog, 8 are misc/power
+- 32 header pins total: 22 GPIO, including 9 analog inputs, plus debug and power pins
 - STM32 MCU
 - 4 layer board
 - 24x44mm board size
@@ -32,6 +32,14 @@ Once I get funding, I will order 10 assembled PCBs from PCBway.
 - `journal.md`: devlog journals
 - `README.md`: this file
 - `production`: production files, like gerbers, bom, cpl
+- `docs/pinout.md`: header pinout and on-board connections
+- `firmware`: starter LED, button, and USB serial firmware
+
+## getting started
+
+[Pinout and connections](docs/pinout.md)
+
+[Building and flashing the starter firmware](firmware/README.md)
 
 
 Designed by EVV

@@ -1,270 +1,624 @@
 {
-  "board": "/Users/ellievanvooren/Documents/kicad/devboard/devboard.kicad_pcb",
-  "timestamp": "2026-09-15T18:00:56",
-  "total_violations": 25,
-  "violation_counts": {
-    "starved_thermal": 4,
-    "track_dangling": 3,
-    "via_dangling": 6,
-    "silk_edge_clearance": 2,
-    "silk_overlap": 7,
-    "silk_over_copper": 3
-  },
-  "severity_counts": {
-    "error": 4,
-    "warning": 21,
-    "info": 0
-  },
+  "$schema": "https://schemas.kicad.org/drc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-04T09:09:52",
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.4",
+  "schematic_parity": [],
+  "source": "devboard.kicad_pcb",
+  "unconnected_items": [],
   "violations": [
     {
-      "type": "starved_thermal",
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "Track [USER_BTN] on In2.Cu, length 0.0015 mm",
+          "pos": {
+            "x": 145.84,
+            "y": 116.14
+          },
+          "uuid": "48c04e5c-ba29-4234-80b3-f26e4a9f68ea"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "Track [SD_CD] on B.Cu, length 0.0177 mm",
+          "pos": {
+            "x": 153.898529,
+            "y": 112.65
+          },
+          "uuid": "5e27b380-e1f9-49b8-b992-04ddf1c63fd0"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "Track [SD_CD] on B.Cu, length 0.2286 mm",
+          "pos": {
+            "x": 150.021422,
+            "y": 112.165345
+          },
+          "uuid": "dedf71f6-c17d-49af-9de4-ae8e17b09763"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [PC15] on F.Cu - B.Cu",
+          "pos": {
+            "x": 144.295983,
+            "y": 114.624005
+          },
+          "uuid": "f250954d-3653-4fd3-a9c4-6a0c5946bf60"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [PA1] on F.Cu - B.Cu",
+          "pos": {
+            "x": 144.9,
+            "y": 119.4
+          },
+          "uuid": "6db4b4e8-241c-4608-8791-4b57279d00f2"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [PA2] on F.Cu - B.Cu",
+          "pos": {
+            "x": 145.412149,
+            "y": 120.014579
+          },
+          "uuid": "71265019-5967-4964-af2c-55349ce87685"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [PA3] on F.Cu - B.Cu",
+          "pos": {
+            "x": 146.105646,
+            "y": 120.413409
+          },
+          "uuid": "845cf6b4-aaeb-4a52-899b-72d81a7aa2fa"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [PA5] on F.Cu - B.Cu",
+          "pos": {
+            "x": 147.540572,
+            "y": 121.2
+          },
+          "uuid": "2f793776-d74e-4b4f-8e01-20353dfebfa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [PB1] on F.Cu - B.Cu",
+          "pos": {
+            "x": 150.879818,
+            "y": 121.128348
+          },
+          "uuid": "60ae168f-09c3-4c05-863d-009f98d884f4"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND] on F.Cu, B.Cu and In1.Cu, priority 0",
+          "pos": {
+            "x": 139.2,
+            "y": 99.2
+          },
+          "uuid": "fe70eb3c-c690-4c3b-a4bd-f5bba158f064"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND] on F.Cu, B.Cu and In1.Cu, priority 0",
+          "pos": {
+            "x": 139.2,
+            "y": 99.2
+          },
+          "uuid": "fe70eb3c-c690-4c3b-a4bd-f5bba158f064"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND] on F.Cu, B.Cu and In1.Cu, priority 0",
+          "pos": {
+            "x": 139.2,
+            "y": 99.2
+          },
+          "uuid": "fe70eb3c-c690-4c3b-a4bd-f5bba158f064"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND] on F.Cu, B.Cu and In1.Cu, priority 0",
+          "pos": {
+            "x": 139.2,
+            "y": 99.2
+          },
+          "uuid": "fe70eb3c-c690-4c3b-a4bd-f5bba158f064"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Silkscreen clipped by board edge",
+      "items": [
+        {
+          "description": "Segment on Edge.Cuts",
+          "pos": {
+            "x": 141.5,
+            "y": 100.5
+          },
+          "uuid": "9e03a35d-d014-4db5-9080-0d4bde0aae01"
+        },
+        {
+          "description": "Reference field of C2",
+          "pos": {
+            "x": 147.75,
+            "y": 101.09
+          },
+          "uuid": "160012ce-458a-42c5-8c60-1129039204eb"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_edge_clearance"
+    },
+    {
+      "description": "Silkscreen clipped by board edge",
+      "items": [
+        {
+          "description": "Segment on Edge.Cuts",
+          "pos": {
+            "x": 141.5,
+            "y": 100.5
+          },
+          "uuid": "9e03a35d-d014-4db5-9080-0d4bde0aae01"
+        },
+        {
+          "description": "Reference field of C8",
+          "pos": {
+            "x": 149.9,
+            "y": 101.09
+          },
+          "uuid": "dffd4e95-b750-45df-8400-2eabe48286bc"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_edge_clearance"
+    },
+    {
+      "description": "Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7000 mm)",
+      "items": [
+        {
+          "description": "PCB text 'Half Life - Hack Club' on B.Silkscreen",
+          "pos": {
+            "x": 155.8,
+            "y": 111.6
+          },
+          "uuid": "93643c56-af86-46ac-944e-4108e83f08f1"
+        }
+      ],
+      "severity": "warning",
+      "type": "text_height"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Reference field of R11",
+          "pos": {
+            "x": 145.0,
+            "y": 112.75
+          },
+          "uuid": "5e4ab816-2bf5-4e6d-9080-d919e5fe5c5a"
+        },
+        {
+          "description": "Reference field of R5",
+          "pos": {
+            "x": 143.05,
+            "y": 113.85
+          },
+          "uuid": "bf0d617a-0d94-4b68-b8a5-5fa3bc9f1495"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Reference field of C5",
+          "pos": {
+            "x": 156.9,
+            "y": 110.85
+          },
+          "uuid": "1d450cb5-0bfd-4cfc-913e-019c81071214"
+        },
+        {
+          "description": "Reference field of C4",
+          "pos": {
+            "x": 155.75,
+            "y": 109.75
+          },
+          "uuid": "8ed500a5-4d5d-4684-a2e3-6053976d5a83"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Reference field of C7",
+          "pos": {
+            "x": 144.25,
+            "y": 111.65
+          },
+          "uuid": "0cbdcd0a-988a-4129-971d-229c4e081c54"
+        },
+        {
+          "description": "Reference field of R11",
+          "pos": {
+            "x": 145.0,
+            "y": 112.75
+          },
+          "uuid": "5e4ab816-2bf5-4e6d-9080-d919e5fe5c5a"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Polygon of U1 on F.Silkscreen",
+          "pos": {
+            "x": 146.06,
+            "y": 113.5625
+          },
+          "uuid": "5c464f59-81ae-4d0e-a72b-0105fad7a901"
+        },
+        {
+          "description": "Reference field of R11",
+          "pos": {
+            "x": 145.0,
+            "y": 112.75
+          },
+          "uuid": "5e4ab816-2bf5-4e6d-9080-d919e5fe5c5a"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment of SW1 on F.Silkscreen",
+          "pos": {
+            "x": 153.33,
+            "y": 121.97
+          },
+          "uuid": "8d79c89d-42d9-42f2-9fc2-e88924e79fb6"
+        },
+        {
+          "description": "Reference field of C12",
+          "pos": {
+            "x": 154.05,
+            "y": 121.45
+          },
+          "uuid": "bcd32165-069f-4ee9-b464-c70970da307a"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment of SW1 on F.Silkscreen",
+          "pos": {
+            "x": 146.87,
+            "y": 121.97
+          },
+          "uuid": "5a79f5b5-5f38-4d0c-a4c2-36b12044473e"
+        },
+        {
+          "description": "Reference field of C12",
+          "pos": {
+            "x": 154.05,
+            "y": 121.45
+          },
+          "uuid": "bcd32165-069f-4ee9-b464-c70970da307a"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Polygon of U1 on F.Silkscreen",
+          "pos": {
+            "x": 146.06,
+            "y": 113.5625
+          },
+          "uuid": "5c464f59-81ae-4d0e-a72b-0105fad7a901"
+        },
+        {
+          "description": "Pad 1 [LED_NET] of R5 on F.Cu",
+          "pos": {
+            "x": 145.61,
+            "y": 113.8
+          },
+          "uuid": "01df5d8a-b351-49e4-a3b2-6ef70c3d24bf"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment of U2 on B.Silkscreen",
+          "pos": {
+            "x": 149.54,
+            "y": 116.3475
+          },
+          "uuid": "2d755b8b-c467-420a-b248-a9d67a2ec4c2"
+        },
+        {
+          "description": "Reference field of D1",
+          "pos": {
+            "x": 150.45,
+            "y": 115.7875
+          },
+          "uuid": "bfd77c3b-78e1-48e9-be19-f3e48b0f1c4d"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Reference field of D1",
+          "pos": {
+            "x": 150.45,
+            "y": 115.7875
+          },
+          "uuid": "bfd77c3b-78e1-48e9-be19-f3e48b0f1c4d"
+        },
+        {
+          "description": "Pad 3 [VBUS] of U2 on B.Cu",
+          "pos": {
+            "x": 151.5875,
+            "y": 115.7375
+          },
+          "uuid": "8e827af1-462b-415b-b615-758efd721894"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Reference field of D1",
+          "pos": {
+            "x": 150.45,
+            "y": 115.7875
+          },
+          "uuid": "bfd77c3b-78e1-48e9-be19-f3e48b0f1c4d"
+        },
+        {
+          "description": "Pad 4 [<no net>] of U2 on B.Cu",
+          "pos": {
+            "x": 149.3125,
+            "y": 115.7375
+          },
+          "uuid": "50a5d5b0-23eb-4c0f-808e-683c9774e914"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "comment": "",
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+      "excluded": true,
+      "items": [
+        {
+          "description": "Pad A1 [GND] of J1 on F.Cu",
+          "pos": {
+            "x": 153.25,
+            "y": 108.35
+          },
+          "uuid": "e2e1fa21-a7ab-41d5-b957-4aa290d70e00"
+        },
+        {
+          "description": "NPTH pad of J1",
+          "pos": {
+            "x": 152.94,
+            "y": 107.275
+          },
+          "uuid": "f46305a0-b908-4a40-b772-dc3fdfad4c3f"
+        }
+      ],
       "severity": "error",
-      "message": "Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)",
-      "location": {
-        "x": 139.2,
-        "y": 99.2,
-        "unit": "mm"
-      }
+      "type": "hole_clearance"
     },
     {
-      "type": "starved_thermal",
+      "comment": "",
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+      "excluded": true,
+      "items": [
+        {
+          "description": "Pad B12 [GND] of J1 on F.Cu",
+          "pos": {
+            "x": 153.25,
+            "y": 108.35
+          },
+          "uuid": "c2879ab2-309c-49f1-99af-ddca92dd06f7"
+        },
+        {
+          "description": "NPTH pad of J1",
+          "pos": {
+            "x": 152.94,
+            "y": 107.275
+          },
+          "uuid": "f46305a0-b908-4a40-b772-dc3fdfad4c3f"
+        }
+      ],
       "severity": "error",
-      "message": "Thermal relief connection to zone incomplete (layer F.Cu; 1 spokes connected to isolated island)",
-      "location": {
-        "x": 139.2,
-        "y": 99.2,
-        "unit": "mm"
-      }
+      "type": "hole_clearance"
     },
     {
-      "type": "starved_thermal",
+      "comment": "",
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+      "excluded": true,
+      "items": [
+        {
+          "description": "Pad A12 [GND] of J1 on F.Cu",
+          "pos": {
+            "x": 146.85,
+            "y": 108.35
+          },
+          "uuid": "5f44a297-ddc8-490f-beca-834a086271f3"
+        },
+        {
+          "description": "NPTH pad of J1",
+          "pos": {
+            "x": 147.16,
+            "y": 107.275
+          },
+          "uuid": "d5664842-14a8-4ff9-b0cf-a44a08a17c89"
+        }
+      ],
       "severity": "error",
-      "message": "Thermal relief connection to zone incomplete (layer B.Cu; 1 spokes connected to isolated island)",
-      "location": {
-        "x": 139.2,
-        "y": 99.2,
-        "unit": "mm"
-      }
+      "type": "hole_clearance"
     },
     {
-      "type": "starved_thermal",
+      "comment": "",
+      "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+      "excluded": true,
+      "items": [
+        {
+          "description": "Pad B1 [GND] of J1 on F.Cu",
+          "pos": {
+            "x": 146.85,
+            "y": 108.35
+          },
+          "uuid": "2fae4ca6-960e-4b69-86aa-6581249b0a29"
+        },
+        {
+          "description": "NPTH pad of J1",
+          "pos": {
+            "x": 147.16,
+            "y": 107.275
+          },
+          "uuid": "d5664842-14a8-4ff9-b0cf-a44a08a17c89"
+        }
+      ],
       "severity": "error",
-      "message": "Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)",
-      "location": {
-        "x": 139.2,
-        "y": 99.2,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "track_dangling",
-      "severity": "warning",
-      "message": "Track has unconnected end",
-      "location": {
-        "x": 145.84,
-        "y": 116.14,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "track_dangling",
-      "severity": "warning",
-      "message": "Track has unconnected end",
-      "location": {
-        "x": 153.898529,
-        "y": 112.65,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "track_dangling",
-      "severity": "warning",
-      "message": "Track has unconnected end",
-      "location": {
-        "x": 150.021422,
-        "y": 112.165345,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "via_dangling",
-      "severity": "warning",
-      "message": "Via is not connected or connected on only one layer",
-      "location": {
-        "x": 144.295983,
-        "y": 114.624005,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "via_dangling",
-      "severity": "warning",
-      "message": "Via is not connected or connected on only one layer",
-      "location": {
-        "x": 144.9,
-        "y": 119.4,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "via_dangling",
-      "severity": "warning",
-      "message": "Via is not connected or connected on only one layer",
-      "location": {
-        "x": 145.412149,
-        "y": 120.014579,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "via_dangling",
-      "severity": "warning",
-      "message": "Via is not connected or connected on only one layer",
-      "location": {
-        "x": 146.105646,
-        "y": 120.413409,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "via_dangling",
-      "severity": "warning",
-      "message": "Via is not connected or connected on only one layer",
-      "location": {
-        "x": 147.540572,
-        "y": 121.2,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "via_dangling",
-      "severity": "warning",
-      "message": "Via is not connected or connected on only one layer",
-      "location": {
-        "x": 150.879818,
-        "y": 121.128348,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 141.5,
-        "y": 100.5,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_edge_clearance",
-      "severity": "warning",
-      "message": "Silkscreen clipped by board edge",
-      "location": {
-        "x": 141.5,
-        "y": 100.5,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 145.0,
-        "y": 112.75,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 156.9,
-        "y": 110.85,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 144.25,
-        "y": 111.65,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 146.06,
-        "y": 113.5625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 153.33,
-        "y": 121.97,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 146.87,
-        "y": 121.97,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_over_copper",
-      "severity": "warning",
-      "message": "Silkscreen clipped by solder mask",
-      "location": {
-        "x": 146.06,
-        "y": 113.5625,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_overlap",
-      "severity": "warning",
-      "message": "Silkscreen clearance",
-      "location": {
-        "x": 149.54,
-        "y": 116.3475,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_over_copper",
-      "severity": "warning",
-      "message": "Silkscreen clipped by solder mask",
-      "location": {
-        "x": 150.45,
-        "y": 115.7875,
-        "unit": "mm"
-      }
-    },
-    {
-      "type": "silk_over_copper",
-      "severity": "warning",
-      "message": "Silkscreen clipped by solder mask",
-      "location": {
-        "x": 150.45,
-        "y": 115.7875,
-        "unit": "mm"
-      }
+      "type": "hole_clearance"
     }
   ]
 }

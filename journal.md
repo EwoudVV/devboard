@@ -85,3 +85,14 @@ Date: Sep 18
 Time: 30 min
 
 PCBway emailed me to confirm the order, and i noticed $25 for just the 4 tht headers. I have these headers and can easily solder them myself, so i said to remove them and also marked the headers as DNP in the prod files. There were also suggestions from them to replace 2 bulk decoupling capacitors with another one because it was out of stock, so i approved that.
+
+## Devlog 08: pinout and firmware
+
+Date: Oct 4
+Time: 1 hour
+
+made a pinout diagram for all 32 header pins and checked it against the schematic and PCB. also corrected the analog pin count in the readme. the SD card uses SPI, so i documented those pins separately.
+
+added starter firmware for the blinking LED, user button, and USB serial. it has commands to turn the LED on and off, resume blinking, and show the button state and press count. it compiles, and the button debounce tests pass. i still need the physical board to test USB and the actual pins.
+
+ran fresh ERC and DRC checks and fixed the incomplete ground thermals with direct connections on seven pads. there are now no active DRC errors or unrouted connections. the older excluded USB connector clearance findings and other warnings are still there. refreshed the gerbers and wrote flashing instructions.

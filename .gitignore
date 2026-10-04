@@ -10,3 +10,7 @@ fp-info-cache
 # OS
 .DS_Store
 .history/
+
+# Firmware downloads and build outputs
+firmware/lib/
+firmware/build/
